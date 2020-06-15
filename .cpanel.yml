@@ -1,0 +1,5 @@
+deployment:
+    tasks:
+        - export DEPLOYPATH=~/app.thomas-claireau.fr/fcc/survey-form
+        - /bin/cp -R * $DEPLOYPATH
+        - $DEPLOYPATH/build.sh 2>&1
